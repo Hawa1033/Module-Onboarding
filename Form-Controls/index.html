@@ -9,19 +9,41 @@
   </head>
   <body>
     <header>
-      <h1>Product Pick</h1>
-    </header>
-    <main>
-      <form>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
-      </form>
-    </main>
-    <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
-    </footer>
+     <form method="post">
+      <div>
+        <label for="name">Full Name: </label>
+        <input type="text" id="name" name="name"required>
+        </div>
+        <div>
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="colour">T-shirt Colour: </label>
+          <select id="colour" name="colour" required>
+            <option value=""> select a colour --</option>
+            <option value="black">Black</option>
+            <option value="white">White</option>
+            <option value="red">Red</option>
+            </select>
+        </div>
+
+        <div>
+          <label for="size">T-Shirt Size:</label>
+          <select id="size" name="size" required>
+            <option value="">--Select a size--</option>
+            <option value="xs">XS</option>
+             <option value="S">S</option>
+              <option value="M">M</option>
+               <option value="L">L</option>
+                <option value="xs">XS</option>
+                 <option value="XL">XL</option>
+                 <option value="XX">XLL</option>
+          </select>
+        </div>
+        <div>
+          <button type="submit">place Order</button>
+        </div>
+     </form>
   </body>
 </html>
